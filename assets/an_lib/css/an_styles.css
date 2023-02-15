@@ -1,0 +1,75 @@
+.err
+{
+  outline:1px solid #F00;
+}
+
+.errmsg, .errmsgs
+{
+  color:#F00;
+  font-size: 11px;
+  display: block;
+}
+
+#anloader
+{
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  background-color: rgba(0,0,0,0.6);
+  background-image: url('../../an_lib/images/loading.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#an_progress
+{
+  position: fixed; 
+  top: 58%; 
+  left: 50%; 
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#an_progress > div
+{
+  width: 100%;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+
+#an_progress .progress 
+{
+  height: 20px;
+  background: #293a50;
+  transition: width .3s;
+  border-radius: none;
+}
+
+#an_progress div span
+{
+  position: absolute;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 100;
+}
+
+#an_progress .progress.hide 
+{
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+
+#an-err
+{
+  color: red;
+}
